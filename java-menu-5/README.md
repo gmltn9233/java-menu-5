@@ -182,7 +182,7 @@ String category = categories.get(Randoms.pickNumberInRange(1, 5));
 - 추천할 수 없는 카테고리인 경우 다시 `Randoms.pickNumberInRange()`를 통해 임의의 값을 생성해서 추천할 카테고리를 정해야 한다.
 
 #### 메뉴
-
+[README.md](README.md)
 - 추천할 메뉴는 정해진 카테고리에 있는
   메뉴를 [`camp.nextstep.edu.missionutils`](https://github.com/woowacourse-projects/mission-utils)에서
   제공하는 `Randoms.shuffle()`을 통해 임의의 순서로 섞은 후, 첫 번째 값을 사용해야 한다.
@@ -208,3 +208,12 @@ String menu = Randoms.shuffle(menus).get(0);
 - 과제 진행 및 제출 방법은 [프리코스 과제 제출](https://github.com/woowacourse/woowacourse-docs/tree/master/precourse)
   문서를 참고한다.
   - 소감은 간소하게 입력해도 된다. 예를 들어, "."만 입력해도 좋다.
+
+
+## 체크리스트
+
+* [x] 코치의 이름은 최소 2글자, 최대 4글자이다.
+* [x] 코치는 최소 2명, 최대 5명까지 식사를 함께 한다.
+* [x] 각 코치는 최소 0개, 최대 2개의 못 먹는 메뉴가 있다.
+* [x] 같은 카테고리는 최대 2회까지 고를 수 있다.
+* [x] 각 코치에게 한 주에 중복되지 않는 메뉴를 추천해야한다.
